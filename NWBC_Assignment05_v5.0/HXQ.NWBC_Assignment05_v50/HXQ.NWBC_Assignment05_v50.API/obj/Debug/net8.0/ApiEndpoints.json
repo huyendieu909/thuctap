@@ -1,0 +1,737 @@
+[
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.AuthenticationController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "api/Authentication/all-accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/Authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginVm",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.LoginVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/Authentication/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerVm",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.RegisterVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/CoursesV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "Add",
+    "RelativePath": "api/v1/CoursesV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "AddAStudentToCourse",
+    "RelativePath": "api/v1/CoursesV/{courseId}/students/{studentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/CoursesV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "Update",
+    "RelativePath": "api/v1/CoursesV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "course",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v1/CoursesV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV1Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v1/CoursesV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/GradesV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "Add",
+    "RelativePath": "api/v1/GradesV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grade",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Grade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/GradesV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "Update",
+    "RelativePath": "api/v1/GradesV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "grade",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Grade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v1/GradesV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/v1/GradesV/allstudents/{gradeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gradeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV1Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v1/GradesV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/StudentsV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "Add",
+    "RelativePath": "api/v1/StudentsV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "Get",
+    "RelativePath": "api/v1/StudentsV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "Update",
+    "RelativePath": "api/v1/StudentsV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "student",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v1/StudentsV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "GetAllCourses",
+    "RelativePath": "api/v1/StudentsV/allcourses/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "GetStudentThrowException",
+    "RelativePath": "api/v1/StudentsV/get-student-throw-exception/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV1Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v1/StudentsV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/CoursesV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "Add",
+    "RelativePath": "api/v2/CoursesV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "AddAStudentToCourse",
+    "RelativePath": "api/v2/CoursesV/{courseId}/students/{studentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/CoursesV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "Update",
+    "RelativePath": "api/v2/CoursesV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "course",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v2/CoursesV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.CoursesV2Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v2/CoursesV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/GradesV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "Add",
+    "RelativePath": "api/v2/GradesV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grade",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Grade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/GradesV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "Update",
+    "RelativePath": "api/v2/GradesV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "grade",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Grade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v2/GradesV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/v2/GradesV/allstudents/{gradeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gradeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.GradesV2Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v2/GradesV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/StudentsV",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "Add",
+    "RelativePath": "api/v2/StudentsV",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "Get",
+    "RelativePath": "api/v2/StudentsV/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "Update",
+    "RelativePath": "api/v2/StudentsV/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "student",
+        "Type": "HXQ.NWBC_Assignment05_v50.Data.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "Delete",
+    "RelativePath": "api/v2/StudentsV/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "GetAllCourses",
+    "RelativePath": "api/v2/StudentsV/allcourses/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "GetStudentThrowException",
+    "RelativePath": "api/v2/StudentsV/get-student-throw-exception/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment05_v50.API.Controllers.StudentsV2Controller",
+    "Method": "GetTestVersioning",
+    "RelativePath": "api/v2/StudentsV/get-test-versioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HXQ.NWBC_Assignment03_v50.API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HXQ.NWBC_Assignment03_v50.API.WeatherForecast, HXQ.NWBC_Assignment05_v50.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

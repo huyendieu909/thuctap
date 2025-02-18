@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HXQ.NWBC_Assignment05_v50.API", "HXQ.NWBC_Assignment05_v50.API\HXQ.NWBC_Assignment05_v50.API.csproj", "{14804D27-63FF-40A7-BAFA-BE18E3358D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HXQ.NWBC_Assignment05_v50.Data", "HXQ.NWBC_Assignment05_v50.Data\HXQ.NWBC_Assignment05_v50.Data.csproj", "{FDADFF93-2052-4020-9F0F-B958E0D8C489}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14804D27-63FF-40A7-BAFA-BE18E3358D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14804D27-63FF-40A7-BAFA-BE18E3358D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14804D27-63FF-40A7-BAFA-BE18E3358D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14804D27-63FF-40A7-BAFA-BE18E3358D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDADFF93-2052-4020-9F0F-B958E0D8C489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDADFF93-2052-4020-9F0F-B958E0D8C489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDADFF93-2052-4020-9F0F-B958E0D8C489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDADFF93-2052-4020-9F0F-B958E0D8C489}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

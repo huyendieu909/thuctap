@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HXQ.NWBC_Assignment03_v50.API.props" />
+</Project>

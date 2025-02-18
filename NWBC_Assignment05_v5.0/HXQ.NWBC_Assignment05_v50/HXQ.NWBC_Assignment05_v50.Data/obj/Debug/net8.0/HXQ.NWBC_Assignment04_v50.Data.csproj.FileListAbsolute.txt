@@ -1,0 +1,15 @@
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\bin\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.deps.json
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\bin\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.runtimeconfig.json
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\bin\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.dll
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\bin\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.pdb
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.csproj.AssemblyReference.cache
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.AssemblyInfoInputs.cache
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.AssemblyInfo.cs
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.csproj.CoreCompileInputs.cache
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.sourcelink.json
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.dll
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\refint\HXQ.NWBC_Assignment04_v50.Data.dll
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.pdb
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\HXQ.NWBC_Assignment04_v50.Data.genruntimeconfig.cache
+F:\project\thuctap\HXQ.NWBC_Assignment04_v50\HXQ.NWBC_Assignment04_v50.Data\obj\Debug\net8.0\ref\HXQ.NWBC_Assignment04_v50.Data.dll
