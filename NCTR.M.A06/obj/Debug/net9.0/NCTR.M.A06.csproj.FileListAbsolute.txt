@@ -1,0 +1,15 @@
+f:\project\thuctap\NCTR.M.A06\bin\Debug\net9.0\NCTR.M.A06.exe
+f:\project\thuctap\NCTR.M.A06\bin\Debug\net9.0\NCTR.M.A06.deps.json
+f:\project\thuctap\NCTR.M.A06\bin\Debug\net9.0\NCTR.M.A06.runtimeconfig.json
+f:\project\thuctap\NCTR.M.A06\bin\Debug\net9.0\NCTR.M.A06.dll
+f:\project\thuctap\NCTR.M.A06\bin\Debug\net9.0\NCTR.M.A06.pdb
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.GeneratedMSBuildEditorConfig.editorconfig
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.AssemblyInfoInputs.cache
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.AssemblyInfo.cs
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.csproj.CoreCompileInputs.cache
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.sourcelink.json
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.dll
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\refint\NCTR.M.A06.dll
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.pdb
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\NCTR.M.A06.genruntimeconfig.cache
+f:\project\thuctap\NCTR.M.A06\obj\Debug\net9.0\ref\NCTR.M.A06.dll

@@ -1,0 +1,79 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net9.0": []
+  },
+  "packageFolders": {
+    "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\": {},
+    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\project\\thuctap\\NCTR.M.A06\\NCTR.M.A06.csproj",
+      "projectName": "NCTR.M.A06",
+      "projectPath": "F:\\project\\thuctap\\NCTR.M.A06\\NCTR.M.A06.csproj",
+      "packagesPath": "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\",
+      "outputPath": "F:\\project\\thuctap\\NCTR.M.A06\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "E:\\Users\\huyen dieu acer ltsc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "E:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "E:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "E:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "E:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

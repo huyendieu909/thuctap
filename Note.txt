@@ -1,0 +1,2 @@
+NCTR là về oop c# 
+NWBC là project về api, có đầy đủ security, authority, authentication
