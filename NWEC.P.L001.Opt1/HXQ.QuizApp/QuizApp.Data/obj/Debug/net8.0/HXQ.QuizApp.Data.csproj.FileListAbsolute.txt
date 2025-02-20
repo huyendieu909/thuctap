@@ -1,0 +1,15 @@
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\bin\Debug\net8.0\HXQ.QuizApp.Data.deps.json
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\bin\Debug\net8.0\HXQ.QuizApp.Data.dll
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\bin\Debug\net8.0\HXQ.QuizApp.Data.pdb
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.csproj.AssemblyReference.cache
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.AssemblyInfoInputs.cache
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.AssemblyInfo.cs
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.csproj.CoreCompileInputs.cache
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.sourcelink.json
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.dll
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\refint\HXQ.QuizApp.Data.dll
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.pdb
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\ref\HXQ.QuizApp.Data.dll
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\bin\Debug\net8.0\HXQ.QuizApp.Data.runtimeconfig.json
+F:\project\thuctap\HXQ.QuizApp\QuizApp.Data\obj\Debug\net8.0\HXQ.QuizApp.Data.genruntimeconfig.cache

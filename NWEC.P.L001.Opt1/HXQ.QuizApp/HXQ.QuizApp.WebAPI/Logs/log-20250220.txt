@@ -1,0 +1,189 @@
+[22:49:21 INF] User profile is available. Using 'E:\Users\huyen dieu acer ltsc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[22:49:27 INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[22:49:27 INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+[22:49:27 INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+[22:49:27 INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+[22:49:27 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[22:49:27 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[22:49:27 INF] Executed DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[22:49:27 INF] No migrations were applied. The database is already up to date.
+[22:49:27 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+[22:49:28 INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Quizzes] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[22:49:28 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Questions] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[22:49:28 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Answers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[22:49:28 INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[22:49:28 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[22:49:28 INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Xóa dữ liệu cũ trong bảng UserQuiz (nếu cần)
+DELETE FROM UserQuiz;
+
+-- Chèn dữ liệu mẫu vào bảng UserQuiz
+INSERT INTO UserQuiz (Id, UserId, QuizId, QuizCode, StartedAt, FinishedAt)
+VALUES 
+(NEWID(), '6BA82D19-B34E-494A-CA26-08DD50C4BDA6', '26547B6F-C24B-4A0E-0CD2-08DD50C4BC66', 'QC001', '2024-02-01 10:00:00', '2024-02-01 10:30:00'),
+(NEWID(), '6BA82D19-B34E-494A-CA26-08DD50C4BDA6', 'C6959B0D-C729-4B05-0CD3-08DD50C4BC66', 'QC002', '2024-02-02 11:00:00', NULL),
+(NEWID(), '732D5F88-8B3B-430E-CA25-08DD50C4BDA6', '22E12461-AD02-46CA-0CD4-08DD50C4BC66', 'QC003', '2024-02-03 09:30:00', '2024-02-03 10:00:00');
+
+
+-- Guid user lấy từ SELECT Id, UserName FROM AspNetUsers
+[22:49:28 INF] Now listening on: https://localhost:7070
+[22:49:28 INF] Now listening on: http://localhost:5242
+[22:49:29 INF] Application started. Press Ctrl+C to shut down.
+[22:49:29 INF] Hosting environment: Development
+[22:49:29 INF] Content root path: F:\project\thuctap\HXQ.QuizApp\HXQ.QuizApp.WebAPI
+[22:49:32 INF] Request starting HTTP/2 GET https://localhost:7070/swagger/index.html - null null
+[22:49:33 INF] Request finished HTTP/2 GET https://localhost:7070/swagger/index.html - 200 null text/html;charset=utf-8 653.8939ms
+[22:49:33 INF] Request starting HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - null null
+[22:49:33 INF] Request starting HTTP/2 GET https://localhost:7070/_vs/browserLink - null null
+[22:49:33 INF] Request finished HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 33.6847ms
+[22:49:33 INF] Request finished HTTP/2 GET https://localhost:7070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 239.8474ms
+[22:49:33 INF] Request starting HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - null null
+[22:49:33 INF] Request finished HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.0378ms
+[23:08:49 INF] User profile is available. Using 'E:\Users\huyen dieu acer ltsc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[23:08:53 INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[23:08:53 INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+[23:08:53 INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+[23:08:53 INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+[23:08:53 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[23:08:53 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[23:08:53 INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[23:08:53 INF] No migrations were applied. The database is already up to date.
+[23:08:53 INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+[23:08:54 INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Quizzes] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[23:08:54 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Questions] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[23:08:54 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Answers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[23:08:54 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[23:08:54 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[23:08:54 INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+-- Xóa dữ liệu cũ trong bảng UserQuiz (nếu cần)
+DELETE FROM UserQuiz;
+
+-- Chèn dữ liệu mẫu vào bảng UserQuiz
+INSERT INTO UserQuiz (Id, UserId, QuizId, QuizCode, StartedAt, FinishedAt)
+VALUES 
+(NEWID(), '6BA82D19-B34E-494A-CA26-08DD50C4BDA6', '26547B6F-C24B-4A0E-0CD2-08DD50C4BC66', 'QC001', '2024-02-01 10:00:00', '2024-02-01 10:30:00'),
+(NEWID(), '6BA82D19-B34E-494A-CA26-08DD50C4BDA6', 'C6959B0D-C729-4B05-0CD3-08DD50C4BC66', 'QC002', '2024-02-02 11:00:00', NULL),
+(NEWID(), '732D5F88-8B3B-430E-CA25-08DD50C4BDA6', '22E12461-AD02-46CA-0CD4-08DD50C4BC66', 'QC003', '2024-02-03 09:30:00', '2024-02-03 10:00:00');
+
+
+-- Guid user lấy từ SELECT Id, UserName FROM AspNetUsers
+[23:08:55 INF] Now listening on: https://localhost:7070
+[23:08:55 INF] Now listening on: http://localhost:5242
+[23:08:55 INF] Application started. Press Ctrl+C to shut down.
+[23:08:55 INF] Hosting environment: Development
+[23:08:55 INF] Content root path: F:\project\thuctap\HXQ.QuizApp\HXQ.QuizApp.WebAPI
+[23:08:57 INF] Request starting HTTP/2 GET https://localhost:7070/swagger/index.html - null null
+[23:08:58 INF] Request finished HTTP/2 GET https://localhost:7070/swagger/index.html - 200 null text/html;charset=utf-8 528.5435ms
+[23:08:58 INF] Request starting HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - null null
+[23:08:58 INF] Request finished HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.9947ms
+[23:08:58 INF] Request starting HTTP/2 GET https://localhost:7070/_vs/browserLink - null null
+[23:08:58 INF] Request finished HTTP/2 GET https://localhost:7070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 136.5993ms
+[23:08:58 INF] Request starting HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - null null
+[23:08:58 INF] Request finished HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.7546ms
+[23:09:02 INF] Request starting HTTP/2 GET https://localhost:7070/WeatherForecast - null null
+[23:09:02 INF] Executing endpoint 'HXQ.QuizApp.WebAPI.Controllers.WeatherForecastController.Get (HXQ.QuizApp.WebAPI)'
+[23:09:02 INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HXQ.QuizApp.WebAPI.WeatherForecast] Get() on controller HXQ.QuizApp.WebAPI.Controllers.WeatherForecastController (HXQ.QuizApp.WebAPI).
+[23:09:02 INF] Executing ObjectResult, writing value of type 'HXQ.QuizApp.WebAPI.WeatherForecast[]'.
+[23:09:02 INF] Executed action HXQ.QuizApp.WebAPI.Controllers.WeatherForecastController.Get (HXQ.QuizApp.WebAPI) in 59.9337ms
+[23:09:02 INF] Executed endpoint 'HXQ.QuizApp.WebAPI.Controllers.WeatherForecastController.Get (HXQ.QuizApp.WebAPI)'
+[23:09:02 INF] Request finished HTTP/2 GET https://localhost:7070/WeatherForecast - 200 null application/json; charset=utf-8 143.1906ms

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2IAK+kK6ABxeBpscATak/rrssIYJ/BohKnyD9QuqU9c=",
+  "Source": "HXQ.QuizApp.WebAPI",
+  "BasePath": "_content/HXQ.QuizApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

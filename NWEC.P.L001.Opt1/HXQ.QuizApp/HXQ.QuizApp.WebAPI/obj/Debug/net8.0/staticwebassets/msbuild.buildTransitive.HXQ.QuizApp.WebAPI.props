@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HXQ.QuizApp.WebAPI.props" />
+</Project>
