@@ -1,0 +1,84 @@
+﻿@model HoangXuanQuy.OnlinePainting.MVC.Models.LoginRegisterViewModel;
+@{
+    ViewData["Title"] = "Login / Sign uP";
+    Layout = "_LayoutLogin";
+}
+<link rel="stylesheet" href="/css/loginstyle .css">
+
+<div style="margin: 20px">
+    <div class="lcontainer" id="lcontainer">
+        <div class="lform-container lsign-up">
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <h1>Create Account</h1>
+                <span>Register with E-mail</span>
+
+                <input asp-for="Register.Email" type="email" placeholder="Enter E-mail">
+                @* <span asp-validation-for="Register.Email" class="text-danger" /> *@
+                
+                <input asp-for="Register.PhoneNumber" type="tel" placeholder="Enter Phone number">
+                @* <span asp-validation-for="Register.PhoneNumber" class="text-danger" /> *@
+
+                <input asp-for="Register.Name" type="text" placeholder="Enter Name">
+                @* <span asp-validation-for="Register.Name" class="text-danger" /> *@
+
+                <input asp-for="Register.Address" type="text" placeholder="Enter Address">
+                @* <span asp-validation-for="Register.Address" class="text-danger" /> *@
+
+                <input asp-for="Register.Password" type="password" placeholder="Enter Password">
+                @* <span asp-validation-for="Register.Password" class="text-danger" /> *@
+
+                <input asp-for="Register.ConfirmPassword" type="password" placeholder="Confirm Password">
+                @* <span asp-validation-for="Register.ConfirmPassword" class="text-danger" /> *@
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+
+        <div class="lform-container lsign-in">
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <h1>Sign In</h1>
+                <span>Login With Email & Password</span>
+
+                <input asp-for="Login.Email" type="email" placeholder="Enter E-mail">
+                @* <span asp-validation-for="Login.Email" class="text-danger" /> *@
+
+                <input asp-for="Login.Password" type="password" placeholder="Enter Password">
+                @* <span asp-validation-for="Login.Password" class="text-danger" /> *@
+
+                <div class="form-check">
+                    <input asp-for="Login.RememberMe" class="form-check-input" /> 
+                    <label asp-for="Login.RememberMe" class="form-check-label">Ghi nhớ đăng nhập</label>
+                </div>                
+                @* <a href="#">Forget Password?</a> *@
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <div class="ltoggle-container">
+            <div class="ltoggle">
+                <div class="ltoggle-panel ltoggle-left">
+                    <h1>Welcome To <br>hxq project</h1>
+                    <p>Sign in With ID & Passowrd</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="ltoggle-panel ltoggle-right">
+                    <h1>Hello world!</h1>
+                    <p class="ltypewriter" style="width: auto; padding: 0;">Come and fly away with me!</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/js/loginscript.js"></script>
+}
+
+

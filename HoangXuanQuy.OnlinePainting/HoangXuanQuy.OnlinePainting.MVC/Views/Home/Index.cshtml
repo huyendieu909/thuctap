@@ -1,0 +1,55 @@
+﻿@model HoangXuanQuy.OnlinePainting.MVC.Models.HomepageViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_LayoutGrayscale";
+}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p class="lead">A website for art transaction</p>
+
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Paintings)
+            {
+                <div class="col-md-4 col-lg-6 col-sm-3">
+                    <div class="card">
+                        <div class="card-body img-thumbnail">
+                            <div class="card-img-top">
+
+                                <img src="@Url.Content(item.ImageUrl)" class="img-fluid" alt="Painting">
+                            </div>
+                            <div class="card-title text-center fw-bold">@item.Title</div>
+                            <div class="card-text text-center">@item.Artist.Name</div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    @* <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            CRUD các controller
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                @Html.ActionLink("Artists", "Index", "Artists", null, new { @class = "dropdown-item" })
+            </li>
+            <li>
+                @Html.ActionLink("Categories", "Index", "Categories", null, new { @class = "dropdown-item" })
+            </li>
+            <li>
+                @Html.ActionLink("Comments", "Index", "Comments", null, new { @class = "dropdown-item" })
+            </li>
+            <li>
+                @Html.ActionLink("Orders", "Index", "Orders", null, new { @class = "dropdown-item" })
+            </li>
+            <li>
+                @Html.ActionLink("Paintings", "Index", "Paintings", null, new { @class = "dropdown-item" })
+            </li>
+        </ul>
+    </div> *@
+</div>

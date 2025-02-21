@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    /*    margin: 0;
+    padding: 0;
+    box-sizing: border-box;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*body{
+    background-color: rgba(0, 0, 0, 0.795);
+     display: flex; 
+     align-items: center; 
+     justify-content: center; 
+     flex-direction: column; 
+     height: 100vh; 
+}*/
+
+.lcontainer {
+    background-color: #ccc;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+    .lcontainer p {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        margin: 20px 0;
+    }
+
+    .lcontainer span {
+        font-size: 12px;
+    }
+
+    .lcontainer a {
+        color: #333;
+        font-size: 13px;
+        text-decoration: none;
+        margin: 15px 0 10px;
+    }
+
+    .lcontainer button {
+        background-color: rgb(255, 13, 13);
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 45px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .lcontainer button.hidden {
+            background-color: transparent;
+            border-color: #fff;
+        }
+
+    .lcontainer form {
+        background-color: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        height: 100%;
+    }
+
+    .lcontainer input {
+        background-color: #eee;
+        border: none;
+        margin: 8px 0;
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+    }
+
+.lform-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.lsign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.lcontainer.active .lsign-in {
+    transform: translateX(100%);
+}
+
+.lsign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.lcontainer.active .lsign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+    .social-icons a {
+        border: 1px solid #ccc;
+        border-radius: 20%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3px;
+        width: 40px;
+        height: 40px;
+    }
+
+.ltoggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.lcontainer.active .ltoggle-container {
+    transform: translateX(-100%);
+    border-radius: 20px;
+}
+
+.ltoggle {
+    background-color: rgba(40, 125, 40, 0.952);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.lcontainer.active .ltoggle {
+    transform: translateX(50%);
+}
+
+.ltoggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.ltoggle-left {
+    transform: translateX(-200%);
+}
+
+.lcontainer.active .ltoggle-left {
+    transform: translateX(0);
+}
+
+.ltoggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+
+.ltypewriter {
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid black; /* Đường gạch bên phải */
+    white-space: nowrap; /* Ngăn ngắt dòng */
+    overflow: hidden; /* Ẩn những ký tự không hiện */
+    width: 0; /* Bắt đầu với độ rộng 0 */
+    animation: typing 4s steps(22) forwards, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}

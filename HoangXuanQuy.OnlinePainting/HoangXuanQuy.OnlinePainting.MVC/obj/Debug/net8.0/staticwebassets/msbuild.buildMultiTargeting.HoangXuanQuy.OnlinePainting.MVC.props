@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HoangXuanQuy.OnlinePainting.MVC.props" />
+</Project>
