@@ -49,6 +49,7 @@ namespace HealthCareAppointment.MVC.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
+            ViewData["Role"] = new SelectList(Enum.GetValues(typeof(Users.RoleEnum)));
             return View();
         }
 
@@ -66,6 +67,7 @@ namespace HealthCareAppointment.MVC.Controllers
                 await unitOfWork.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Role"] = new SelectList(Enum.GetValues(typeof(Users.RoleEnum)), users.Role);
             return View(users);
         }
 
@@ -82,6 +84,7 @@ namespace HealthCareAppointment.MVC.Controllers
             {
                 return NotFound();
             }
+            ViewData["Role"] = new SelectList(Enum.GetValues(typeof(Users.RoleEnum)), users.Role);
             return View(users);
         }
 
@@ -117,6 +120,7 @@ namespace HealthCareAppointment.MVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Role"] = new SelectList(Enum.GetValues(typeof(Users.RoleEnum)), users.Role);
             return View(users);
         }
 
