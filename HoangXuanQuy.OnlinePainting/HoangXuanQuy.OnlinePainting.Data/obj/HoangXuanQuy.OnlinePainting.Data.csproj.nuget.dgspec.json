@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {}
+    "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {}
   },
   "projects": {
-    "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {
+    "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
+        "projectUniqueName": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
         "projectName": "HoangXuanQuy.OnlinePainting.Data",
-        "projectPath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
+        "projectPath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
         "packagesPath": "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\",
-        "outputPath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\obj\\",
+        "outputPath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

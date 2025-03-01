@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoangXuanQuy.OnlinePainting.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71aaff8df20b2dd882745db1a6dd9e7726ab721e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9520ca1493bc268e6e8efef4d1adce9c8cbe47")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoangXuanQuy.OnlinePainting.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoangXuanQuy.OnlinePainting.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

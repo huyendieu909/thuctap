@@ -8043,11 +8043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\HoangXuanQuy.OnlinePainting.MVC.csproj",
+      "projectUniqueName": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\HoangXuanQuy.OnlinePainting.MVC.csproj",
       "projectName": "HoangXuanQuy.OnlinePainting.MVC",
-      "projectPath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\HoangXuanQuy.OnlinePainting.MVC.csproj",
+      "projectPath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\HoangXuanQuy.OnlinePainting.MVC.csproj",
       "packagesPath": "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\",
-      "outputPath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\obj\\",
+      "outputPath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8068,8 +8068,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {
-              "projectPath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj"
+            "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj": {
+              "projectPath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj"
             }
           }
         }

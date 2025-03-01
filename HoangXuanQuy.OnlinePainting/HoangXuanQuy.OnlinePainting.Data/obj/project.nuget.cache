@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t2gp5A+MFI8=",
+  "dgSpecHash": "Ix+J8sj64Ws=",
   "success": true,
-  "projectFilePath": "F:\\project\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
+  "projectFilePath": "F:\\k8\\thuctap\\HoangXuanQuy.OnlinePainting\\HoangXuanQuy.OnlinePainting.Data\\HoangXuanQuy.OnlinePainting.Data.csproj",
   "expectedPackageFiles": [
     "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "E:\\Users\\huyen dieu acer ltsc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

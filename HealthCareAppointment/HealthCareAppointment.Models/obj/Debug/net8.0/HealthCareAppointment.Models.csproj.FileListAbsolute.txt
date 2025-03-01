@@ -1,0 +1,15 @@
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\bin\Debug\net8.0\HealthCareAppointment.Models.deps.json
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\bin\Debug\net8.0\HealthCareAppointment.Models.runtimeconfig.json
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\bin\Debug\net8.0\HealthCareAppointment.Models.dll
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\bin\Debug\net8.0\HealthCareAppointment.Models.pdb
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.csproj.AssemblyReference.cache
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.AssemblyInfoInputs.cache
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.AssemblyInfo.cs
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.csproj.CoreCompileInputs.cache
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.sourcelink.json
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.dll
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\refint\HealthCareAppointment.Models.dll
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.pdb
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\HealthCareAppointment.Models.genruntimeconfig.cache
+F:\project\thuctap\HealthCareAppointment\HealthCareAppointment.Models\obj\Debug\net8.0\ref\HealthCareAppointment.Models.dll
