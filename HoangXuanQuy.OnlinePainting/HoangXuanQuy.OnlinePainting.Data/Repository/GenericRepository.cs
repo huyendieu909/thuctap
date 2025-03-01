@@ -32,6 +32,20 @@ namespace HoangXuanQuy.OnlinePainting.Data.Repository
             return await _context.SaveChangesAsync() > 0;
         }
 
+        public async Task<bool> DeleteAsync(T entity)
+        {
+            _dbSet.Remove(entity);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<T> FindAsync(int? id)
+        {
+            var entity = await _dbSet.FindAsync(id);
+            if (entity == null) throw new Exception("Entity not found");
+            return entity; 
+        }
+
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();

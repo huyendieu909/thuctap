@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HXQ.NWBC_Assignment05_v50.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9520ca1493bc268e6e8efef4d1adce9c8cbe47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66a48fb6a768d3bfba88ec60efc5ba3143e09d2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HXQ.NWBC_Assignment05_v50.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HXQ.NWBC_Assignment05_v50.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

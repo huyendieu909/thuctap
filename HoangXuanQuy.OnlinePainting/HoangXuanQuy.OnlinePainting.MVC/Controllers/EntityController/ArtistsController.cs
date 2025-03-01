@@ -7,22 +7,23 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HoangXuanQuy.OnlinePainting.Data.Context;
 using HoangXuanQuy.OnlinePainting.Data.Models;
+using HoangXuanQuy.OnlinePainting.Data.UnitOfWork;
 
 namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
 {
     public class ArtistsController : Controller
     {
-        private readonly OnlinePaintingContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ArtistsController(OnlinePaintingContext context)
+        public ArtistsController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: Artists
         public async Task<IActionResult> Index(string keyword)
         {
-            var artist = _context.Artists.Select(x => x);
+            var artist = _unitOfWork.Artists.GetQuery().Select(x => x);
             if (!String.IsNullOrEmpty(keyword))
             {
                 artist = artist.Where(artist => artist.Name.Contains(keyword));
@@ -43,7 +44,7 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
                 return NotFound();
             }
 
-            var artist = await _context.Artists
+            var artist = await _unitOfWork.Artists.GetQuery()
                 .FirstOrDefaultAsync(m => m.ArtistId == id);
             if (artist == null)
             {
@@ -68,8 +69,8 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
         {
             if (ModelState.IsValid)
             {
-                _context.Add(artist);
-                await _context.SaveChangesAsync();
+                await _unitOfWork.Artists.AddAsync(artist);
+                await _unitOfWork.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(artist);
@@ -83,7 +84,7 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
                 return NotFound();
             }
 
-            var artist = await _context.Artists.FindAsync(id);
+            var artist = await _unitOfWork.Artists.FindAsync(id);
             if (artist == null)
             {
                 return NotFound();
@@ -107,8 +108,8 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
             {
                 try
                 {
-                    _context.Update(artist);
-                    await _context.SaveChangesAsync();
+                    _unitOfWork.Artists.UpdateAsync(artist);
+                    await _unitOfWork.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -134,7 +135,7 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
                 return NotFound();
             }
 
-            var artist = await _context.Artists
+            var artist = await _unitOfWork.Artists.GetQuery()
                 .FirstOrDefaultAsync(m => m.ArtistId == id);
             if (artist == null)
             {
@@ -149,19 +150,19 @@ namespace HoangXuanQuy.OnlinePainting.MVC.Controllers.EntityController
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var artist = await _context.Artists.FindAsync(id);
+            var artist = await _unitOfWork.Artists.FindAsync(id);
             if (artist != null)
             {
-                _context.Artists.Remove(artist);
+                await _unitOfWork.Artists.DeleteAsync(artist);
             }
 
-            await _context.SaveChangesAsync();
+            await _unitOfWork.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ArtistExists(int id)
         {
-            return _context.Artists.Any(e => e.ArtistId == id);
+            return _unitOfWork.Artists.GetQuery().Any(e => e.ArtistId == id);
         }
     }
 }

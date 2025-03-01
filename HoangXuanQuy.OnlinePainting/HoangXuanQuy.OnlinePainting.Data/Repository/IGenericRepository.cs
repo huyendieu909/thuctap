@@ -14,12 +14,13 @@ namespace HoangXuanQuy.OnlinePainting.Data.Repository
         Task AddAsync(T entity);
         bool UpdateAsync(T entity);
         Task<bool> DeleteAsync(int id);
+        Task<bool> DeleteAsync(T entity);
 
         //raw query không async, truy vấn xong mới ToListAsync()
         IQueryable<T> GetQuery(); 
         IQueryable<T> GetQuery(Func<T, bool> predicate);
         
-
+        Task<T> FindAsync(int? id);
 
     }
 }

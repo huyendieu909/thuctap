@@ -1,5 +1,6 @@
 ﻿using HoangXuanQuy.OnlinePainting.Data.Context;
 using HoangXuanQuy.OnlinePainting.Data.Models;
+using HoangXuanQuy.OnlinePainting.Data.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,6 +33,8 @@ namespace HoangXuanQuy.OnlinePainting.MVC
                 options.LogoutPath = "/Login/Logout";
                 options.AccessDeniedPath = "/Login/AccessDenied";
             });
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             var app = builder.Build();
 
